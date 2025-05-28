@@ -60,7 +60,8 @@ import (
 	"k8s.io/cloud-provider-aws/pkg/providers/v1/config"
 	"k8s.io/cloud-provider-aws/pkg/providers/v1/iface"
 	"k8s.io/cloud-provider-aws/pkg/providers/v1/variant"
-	_ "k8s.io/cloud-provider-aws/pkg/providers/v1/variant/fargate" // ensure the fargate variant gets registered
+	_ "k8s.io/cloud-provider-aws/pkg/providers/v1/variant/fargate"     // ensure the fargate variant gets registered
+	_ "k8s.io/cloud-provider-aws/pkg/providers/v1/variant/voltagepark" // ensure the voltagepark variant gets registered
 	"k8s.io/cloud-provider-aws/pkg/resourcemanagers"
 	"k8s.io/cloud-provider-aws/pkg/services"
 )
